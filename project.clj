@@ -5,6 +5,8 @@
                  [org.clojure/clojure "1.9.0-alpha12" :scope "provided"]
                  [org.arachne-framework/arachne-core "0.1.0-master-0057-ad6d720"]]
 
+  ;; Use Arachne's development builds
+  :repositories [["arachne-dev" "http://maven.arachne-framework.org/artifactory/arachne-dev"]]
   ;; Dev profile for non-transitive dependencies
   :profiles
   {:dev
