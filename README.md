@@ -19,6 +19,30 @@ These files are heavily commented and documented. Reading and understanding
 them is highly recommended if you want to understand how modules work; all of
 the code is very similar to what you will need to write, for any module.
 
+## What it does
+
+This module allows you to define components called "greeters." When Arachne
+starts, each greeter will print out a custom message to `System/out`.
+
+A config using this module looks something like this:
+
+```clojure
+
+(require '[arachne.core.dsl :as core])
+(require '[arachne.hello :as hello])
+
+(core/runtime :test/runtime [:test.greeting/spanish :test.greeting/informal])
+
+(hello/greeter :test.greeting/spanish "Hola!")
+(hello/greeter :test.greeting/informal "Hi!")
+```
+
+And the output when you start this Arachne app:
+```
+Hola!
+Hi!
+```
+
 ## How to run it
 
 1. You can run the tests in `test/arachne/hello_test.clj`, which create a full
