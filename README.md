@@ -24,7 +24,7 @@ the code is very similar to what you will need to write, for any module.
 This module allows you to define components called "greeters." When Arachne
 starts, each greeter will print out a custom message to `System/out`.
 
-A config using this module looks something like this:
+A config initialization script using this module looks something like this:
 
 ```clojure
 
@@ -37,7 +37,7 @@ A config using this module looks something like this:
 (hello/greeter :test.greeting/informal "Hi!")
 ```
 
-And the output when you start this Arachne app:
+And the output when you start an Arachne app using that config:
 ```
 Hola!
 Hi!
