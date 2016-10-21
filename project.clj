@@ -3,15 +3,12 @@
   :dependencies [
                  ;; Scope "provided" means Clojure itself will be required, but not as a transitive dependency
                  [org.clojure/clojure "1.9.0-alpha12" :scope "provided"]
-                 [org.arachne-framework/arachne-core "0.1.0-master-0057-ad6d720"]
-
-                 ]
+                 [org.arachne-framework/arachne-core "0.1.0-master-0057-ad6d720"]]
 
   ;; Dev profile for non-transitive dependencies
   :profiles
   {:dev
-   {:resource-paths ["test-configs"]
-    :dependencies
+   {:dependencies
     [
      ;; Include both DataScript and Datomic so we can test against both; we
      ;; don't know which our users will choose!

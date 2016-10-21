@@ -23,8 +23,7 @@ the code is very similar to what you will need to write, for any module.
 
 1. You can run the tests in `test/arachne/hello_test.clj`, which create a full
 Arachne application using the module. There are two configs provided for trying
-out the different scenarios, both in the `test-configs` directory (which is
-added to the classpath in Leiningen's `:dev` profile.)
+out the different possibilities, both in the `test-configs` directory.
 
 2. You can compile the module into a jar in the standard way, using `lein
 install` to install it to your local Maven repository. From there, you can
