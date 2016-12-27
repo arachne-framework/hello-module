@@ -5,7 +5,7 @@
   implementation would all have their own namespaces, but here we will keep them
   together so it's possible to see all the parts at once."
   (:require [arachne.core.config :as cfg]
-            [arachne.core.config.ontology :as o]
+            [arachne.core.config.model :as m]
             [arachne.core.config.init :as dsl]
             [arachne.core.dsl.specs :as dslspecs]
             [com.stuartsierra.component :as c]
@@ -19,9 +19,9 @@
 (defn schema
   "Return the schema for the hello module"
   []
-  (o/class :arachne.hello/Greeter [:arachne.core/Component]
+  (m/type :arachne.hello/Greeter [:arachne.core/Component]
     "A greeter is a component that prints a greeting to System/out when the system is started."
-    (o/attr :arachne.hello.greeter/greeting :one :string
+    (m/attr :arachne.hello.greeter/greeting :one :string
       "The greeting that this greeter will use")))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;

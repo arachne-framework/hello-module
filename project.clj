@@ -1,9 +1,9 @@
-(defproject org.arachne-framework/hello-module "0.1.0"
+(defproject org.arachne-framework/hello-module "0.1.0-SNAPSHOT"
   :description "A minimal sample Arachne module"
   :dependencies [
                  ;; Scope "provided" means Clojure itself will be required, but not as a transitive dependency
                  [org.clojure/clojure "1.9.0-alpha12" :scope "provided"]
-                 [org.arachne-framework/arachne-core "0.1.0-master-0057-ad6d720"]]
+                 [org.arachne-framework/arachne-core "0.1.0-master-0062-a6074e6"]]
 
   ;; Use Arachne's development builds
   :repositories [["arachne-dev" "http://maven.arachne-framework.org/artifactory/arachne-dev"]]
